@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Clock, Plus, ArrowRight } from 'lucide-react';
-
+import service1 from '../assets/public/imgs/limpieza-profunda.png';
+import service2 from '../assets/public/imgs/masaje-facial.jpg';
+import service3 from '../assets/public/imgs/masajes-relajantes.jpg';
 const SpaServices = () => {
   const [selectedCategory, setSelectedCategory] = useState('todos');
 
@@ -19,7 +21,7 @@ const SpaServices = () => {
       category: 'masajes',
       duration: '60 min',
       price: 75,
-      image: 'src/assets/public/imgs/limpieza-profunda.png', // Reemplaza con la ruta correcta si la tienes
+      image: `${service1}`, // Reemplaza con la ruta correcta si la tienes
       description: 'Un masaje suave y relajante que combina técnicas suecas y aromaterapia para aliviar el estrés.',
       benefits: ['Reduce el estrés', 'Mejora la circulación', 'Alivia dolores musculares']
     },
@@ -29,7 +31,7 @@ const SpaServices = () => {
       category: 'faciales',
       duration: '75 min',
       price: 95,
-      image: 'src/assets/public/imgs/masaje-facial.jpg', // Reemplaza con la ruta correcta si la tienes
+      image: `${service2}`, // Reemplaza con la ruta correcta si la tienes
       description: 'Tratamiento facial avanzado que combate los signos del envejecimiento y revitaliza la piel.',
       benefits: ['Reduce arrugas', 'Aumenta colágeno', 'Ilumina la piel']
     },
@@ -39,7 +41,7 @@ const SpaServices = () => {
       category: 'rituales',
       duration: '90 min',
       price: 120,
-      image: 'src/assets/public/imgs/masajes-relajantes.jpg', // Reemplaza con la ruta correcta si la tienes
+      image: `${service3}`, // Reemplaza con la ruta correcta si la tienes
       description: 'Una experiencia única que combina masaje con piedras calientes y aceites esenciales.',
       benefits: ['Relajación profunda', 'Desintoxicación', 'Equilibrio energético']
     },
@@ -49,7 +51,7 @@ const SpaServices = () => {
       category: 'faciales',
       duration: '75 min',
       price: 85,
-      image: 'src/assets/public/imgs/limpieza-profunda.png', // Reemplaza con la ruta correcta si la tienes
+      image:`${service1}`, // Reemplaza con la ruta correcta si la tienes
       description: 'Masaje terapéutico enfocado en liberar la tensión muscular profunda y eliminar toxinas acumuladas.',
       benefits: ['Libera tensión muscular', 'Elimina toxinas', 'Mejora la movilidad']
     },
@@ -59,7 +61,7 @@ const SpaServices = () => {
       category: 'masajes', // Podría ser 'faciales' o 'masajes faciales', decide la categoría más apropiada
       duration: '60 min',
       price: 110,
-      image: 'src/assets/public/imgs/masaje-facial.jpg', // Reemplaza con la ruta correcta si la tienes
+      image: `${service2}`, // Reemplaza con la ruta correcta si la tienes
       description: 'Un masaje facial especializado que utiliza técnicas y productos para rejuvenecer la piel y reducir líneas de expresión.',
       benefits: ['Reduce líneas de expresión', 'Rejuvenece la piel', 'Mejora la elasticidad']
     },
@@ -69,7 +71,7 @@ const SpaServices = () => {
       category: 'corporales', // Podría ser 'corporales' o mantener 'masajes' como categoría general
       duration: '90 min',
       price: 150,
-      image: 'src/assets/public/imgs/masajes-relajantes.jpg', // Reemplaza con la ruta correcta si la tienes
+      image: `${service1}`, // Reemplaza con la ruta correcta si la tienes
       description: 'Tratamiento corporal completo diseñado para combatir el envejecimiento de la piel, mejorar la firmeza y la hidratación.',
       benefits: ['Mejora la firmeza de la piel', 'Hidratación profunda', 'Revitaliza la piel']
     }

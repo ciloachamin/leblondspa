@@ -1,4 +1,7 @@
 import React from "react";
+import service1 from '../assets/public/imgs/limpieza-profunda.png';
+import service2 from '../assets/public/imgs/masaje-facial.jpg';
+import service3 from '../assets/public/imgs/masajes-relajantes.jpg';
 
 const RelaxationSpa = () => {
   return (
@@ -23,21 +26,21 @@ const RelaxationSpa = () => {
           <div className="mt-8 md:mt-0 md:w-1/2 grid grid-cols-2 gap-4">
             <div className="relative">
               <img
-                src="src/assets/public/imgs/masaje-facial.jpg" // Replace with your image URL
+                src={service1} // Replace with your image URL
                 alt="Relaxation 1"
                 className="rounded-full shadow-lg border-4 border-white"
               />
             </div>
             <div className="relative">
               <img
-                src="src/assets/public/imgs/limpieza-profunda.png" // Replace with your image URL
+                src={service2} // Replace with your image URL
                 alt="Relaxation 2"
                 className="rounded-full shadow-lg border-4 border-white"
               />
             </div>
             <div className="relative col-span-2">
               <img
-                src="src/assets/public/imgs/masajes-relajantes.jpg" // Replace with your image URL
+                src={service3}
                 alt="Relaxation 3"
                 className="rounded-full shadow-lg border-4 border-white mx-auto"
               />

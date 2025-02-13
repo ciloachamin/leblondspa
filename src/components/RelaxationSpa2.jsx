@@ -1,5 +1,9 @@
 import React from "react";
 import BeforeAfterSlider from "./BeforeAfterSlider";
+
+import service1 from '../assets/public/imgs/limpieza-profunda.png';
+import service2 from '../assets/public/imgs/masaje-facial.jpg';
+
 const RelaxationSpa = () => {
   return (
     <div className="bg-gradient-to-b from-[#f5f5f5] to-white py-10 px-5">
@@ -39,8 +43,8 @@ const RelaxationSpa = () => {
           {/* Right Section */}
           <div className="mt-8 md:mt-0 md:w-1/2   gap-4">
             <BeforeAfterSlider
-              afterImage={"src/assets/public/imgs/limpieza-profunda.png"}
-              beforeImage={"src/assets/public/imgs/masaje-facial.jpg"}
+              afterImage={service1}
+              beforeImage={service2}
             ></BeforeAfterSlider>
           </div>
         </div>
