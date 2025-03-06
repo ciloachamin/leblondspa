@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const BeforeAfterSlider = ({ beforeImage, afterImage }) => {
+const BeforeAfterSlider = ({ beforeImage, afterImage, width = "100%", height = "16rem" }) => {
   const [sliderPosition, setSliderPosition] = useState(50);
 
   useEffect(() => {
@@ -15,8 +15,11 @@ const BeforeAfterSlider = ({ beforeImage, afterImage }) => {
   }, []);
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto my-16">
-      <div className="relative w-full h-64 overflow-hidden rounded-lg shadow-lg">
+    <div className="relative mx-auto my-16" style={{ width }}>
+      <div
+        className="relative overflow-hidden rounded-lg shadow-lg"
+        style={{ width: "100%", height }}
+      >
         {/* Before Image */}
         <img
           src={beforeImage}

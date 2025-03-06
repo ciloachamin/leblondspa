@@ -2,20 +2,21 @@ import React from "react";
 import especialista from "../assets/public/imgs/especialista1.png";
 import { Phone, Mail, Star, Calendar } from "lucide-react";
 const CartProfesional = () => {
-  const professional = {
-    id: 1,
-    name: "Dra. Jimena Saquicela",
-    specialty: "Especialista en ",
-    image: "/api/placeholder/400/400",
-    rating: 4.8,
-    email: "ana.garcia@spa.com",
-    phone: "+34 600 123 456",
-    experience: "8 años de experiencia",
-    description:
-      "Especialista en masajes terapéuticos y técnicas de relajación profunda.Especialista en masajes terapéuticos y técnicas de relajación profunda.Especialista en masajes terapéuticos y técnicas de relajación profunda.Especialista en masajes terapéuticos y técnicas de relajación profunda.",
-  };
+const professional = {
+  id: 1,
+  name: "DMC. Jimena Saquicela",
+  specialty: "Especialista en el cuidado de la piel",
+  image: "/api/placeholder/400/400",
+  rating: 4.9,
+  email: "jimena.saquicela@leblondspa.com",
+  phone: "+34 600 987 654",
+  experience: "Más de 30 años de experiencia",
+  description:
+    "Soy una especialista reconocida en tratamientos dermatológicos avanzados. Nuestro enfoque combina tecnología de vanguardia, como peelings químicos y terapia láser, con un cuidado personalizado que asegura resultados efectivos y duraderos. Nuestro compromiso es transformar la piel de sus pacientes y mejorar su confianza.",
+};
+
   return (
-    <div className=" py-10 px-5">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 className="text-4xl font-bold text-center mb-12 text-gray-900">
         Nuestros <span className="text-[#BC9C5E]">Profesionales</span>
       </h1>
