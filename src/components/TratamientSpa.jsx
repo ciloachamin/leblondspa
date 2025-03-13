@@ -28,8 +28,8 @@ const TratamientSpa = () => {
     },
   ];
   return (
-    <div className="bg-gradient-to-b from-[#f5f5f5] to-white py-10 px-5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-b from-[#f5f5f5] to-white py-16 px-5" id="contacto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16">
           {/* Tratamientos Específicos */}
                 <div className="mt-16 text-center">
                   <h3 className="text-3xl font-bold text-gray-900 mb-8">

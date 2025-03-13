@@ -6,15 +6,15 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { text: "Inicio", href: "#" },
-    { text: "Servicios", href: "#" },
-    { text: "Productos", href: "#" },
-    { text: "Nosotros", href: "#" },
-    { text: "Contacto", href: "#" },
+    { text: "Inicio", href: "#inicio" },
+    { text: "Servicios", href: "#servicios" },
+    { text: "Resultados", href: "#resultados" },
+    { text: "Nosotros", href: "#nosotros" },
+    { text: "Contacto", href: "#contacto" },
   ];
 
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -64,6 +64,7 @@ const NavBar = () => {
               <a
                 key={item.text}
                 href={item.href}
+                onClick={() => setIsOpen(false)}
                 className="block text-gray-700 hover:text-[#BC9C5E] hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
               >
                 {item.text}

@@ -61,7 +61,7 @@ const BioestimuladoresModerno = () => {
           </p>
 
           {/* Tabs para bioestimuladores */}
-          <div className="inline-flex bg-gray-100 p-1 rounded-full">
+          {/* <div className="inline-flex bg-gray-100 p-1 rounded-full">
             {bioestimuladores.map((bio, index) => (
               <button
                 key={index}
@@ -75,7 +75,7 @@ const BioestimuladoresModerno = () => {
                 {bio.nombre}
               </button>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Contenido principal */}
@@ -83,14 +83,11 @@ const BioestimuladoresModerno = () => {
           {/* Columna izquierda - Proceso */}
           <div className="lg:col-span-6 space-y-6">
             <div className="bg-white p-6 rounded-xl shadow-sm mb-6">
-              <h3 className="text-xl font-semibold mb-2">
-                {bioestimuladores[activeTab].nombre}
-              </h3>
               <p className="text-[#BC9C5E] font-medium mb-4">
                 {bioestimuladores[activeTab].ventaja}
               </p>
               <p className="text-gray-600">
-                Los bioestimuladores {bioestimuladores[activeTab].nombre} actúan
+                Los bioestimuladores actúan
                 desde el interior, estimulando la producción natural de colágeno
                 para lograr un rejuvenecimiento progresivo y duradero.
               </p>

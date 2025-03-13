@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Clock, Plus, ArrowRight } from "lucide-react";
-import service1 from "../assets/public/imgs/cama-hiperbarica-sirve.jpg";
+import service1 from "../assets/public/imgs/cama-hiperbarica-facial.webp";
 import service2 from "../assets/public/imgs/plasma-rico-en-fibrina.jpg";
 import service3 from "../assets/public/imgs/bioestimuladores-de-colageno.jpg";
 import service4 from "../assets/public/imgs/masaje-tailandes.jpg";
@@ -8,6 +8,7 @@ import service5 from "../assets/public/imgs/masaje-facial.jpg";
 import service6 from "../assets/public/imgs/after-work.jpg";
 import service7 from "../assets/public/imgs/after-work-fullbody.webp";
 import service8 from "../assets/public/imgs/cleopatra-dark-massage.jpg";
+import service9 from "../assets/public/imgs/extraccion-lunares-verrugas.jpg";
 
 const SpaServices = () => {
   const [selectedCategory, setSelectedCategory] = useState("todos");
@@ -18,6 +19,7 @@ const SpaServices = () => {
     { id: "faciales", name: "Faciales" },
     { id: "corporales", name: "Corporales" },
     { id: "rituales", name: "Rituales" },
+    { id: "dermatología", name: "Dermatología" },
   ];
 
   const services = [
@@ -26,7 +28,7 @@ const SpaServices = () => {
       name: "Cámara de Oxígeno Hiperbárico",
       category: "corporales",
       duration: "45 min",
-      price: 120,
+      price: 50,
       image: `${service1}`,
       description:
         "Sesión terapéutica con oxígeno puro para mejorar la oxigenación de tejidos y acelerar la recuperación.",
@@ -41,7 +43,7 @@ const SpaServices = () => {
       name: "Plasma Rico en Fibrina",
       category: "faciales",
       duration: "60 min",
-      price: 150,
+      price: 100,
       image: `${service2}`,
       description:
         "Tratamiento avanzado para rejuvenecer la piel, estimular el colágeno y mejorar la elasticidad.",
@@ -56,7 +58,7 @@ const SpaServices = () => {
       name: "Bioestimuladores de Colágeno",
       category: "faciales",
       duration: "75 min",
-      price: 130,
+      price: 150,
       image: `${service3}`,
       description:
         "Terapia innovadora para estimular la producción natural de colágeno y mejorar la firmeza de la piel.",
@@ -71,7 +73,7 @@ const SpaServices = () => {
       name: "Masaje Tailandés Relajante",
       category: "masajes",
       duration: "90 min",
-      price: 100,
+      price: 50,
       image: `${service4}`,
       description:
         "Masaje tradicional tailandés diseñado para relajar y equilibrar cuerpo y mente.",
@@ -86,7 +88,7 @@ const SpaServices = () => {
       name: "Limpieza Facial Completa",
       category: "faciales",
       duration: "60 min",
-      price: 80,
+      price: 60,
       image: `${service5}`,
       description:
         "Tratamiento facial completo con vapor de ozono, peeling ultrasónico y limpieza profunda.",
@@ -101,7 +103,7 @@ const SpaServices = () => {
       name: "Paquete After Work",
       category: "rituales",
       duration: "20-30 min",
-      price: 200,
+      price: 50,
       image: `${service6}`,
       description:
         "Nuestra sesión After Work es ideal para esas personas cuya jornada laboral es exigente y genera estrés en ciertas zonas del cuerpo como el cuello, los hombros, la nuca, etc.",
@@ -110,13 +112,14 @@ const SpaServices = () => {
         "Hidratación profunda",
         "Alivia el estrés acumulado",
         "Libera tensiones",
+        "Copa de vino o whisky",
       ],
     },
     {
       id: 7,
       name: "Paquete After Work FullBody",
       category: "rituales",
-      duration: "50 min",
+      duration: "90 min",
       price: 200,
       image: `${service7}`,
       description:
@@ -126,6 +129,7 @@ const SpaServices = () => {
         "Hidratación profunda",
         "Alivia el estrés acumulado",
         "Libera tensiones",
+        "Copa de vino o whisky",
       ],
     },
     {
@@ -133,7 +137,7 @@ const SpaServices = () => {
       name: "Cleopatra Dark Massage",
       category: "rituales",
       duration: "90 min",
-      price: 150,
+      price: 120,
       image: `${service8}`,
       description:
         "Masaje exclusivo con chocolate que exfolia, hidrata y relaja profundamente. Logrando una piel suave y luminosa.",
@@ -143,7 +147,22 @@ const SpaServices = () => {
         "Ambiente confortable",
         "Aromaterapia",
         "Musicoterapia",
-
+        "Copa de vino o whisky",
+      ],
+    },
+    {
+      id: 9,
+      name: "Extracción de Lunares y Verrugas",
+      category: "dermatología",
+      duration: "30 min",
+      price: 80,
+      image: `${service9}`,
+      description:
+        "Procedimiento seguro y efectivo para la extracción de lunares y verrugas con técnicas especializadas.",
+      benefits: [
+        "Elimina lunares y verrugas de forma segura",
+        "Minimiza cicatrices",
+        "Resultados inmediatos",
       ],
     },
   ];
@@ -154,8 +173,8 @@ const SpaServices = () => {
       : services.filter((service) => service.category === selectedCategory);
 
   return (
-    <div className="bg-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-16" id="servicios">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16">
         {/* Encabezado */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
@@ -228,7 +247,13 @@ const SpaServices = () => {
 
                 {/* Precio y Botón */}
                 <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                  <div className="text-2xl font-bold">${service.price}</div>
+                  <div className="flex items-center">
+                    {" "}
+                    <span className="text-sm mr-1">Desde</span>{" "}
+                    <span className="text-2xl font-bold">
+                      ${service.price.toFixed(2)}
+                    </span>{" "}
+                  </div>
                   <button className="flex items-center text-gray-900 font-medium hover:text-gray-600 transition-colors">
                     Reservar
                     <ArrowRight className="w-4 h-4 ml-2" />

@@ -8,11 +8,11 @@ const professional = {
   specialty: "Especialista en el cuidado de la piel",
   image: "/api/placeholder/400/400",
   rating: 4.9,
-  email: "jimena.saquicela@leblondspa.com",
-  phone: "+34 600 987 654",
+  email: "jimenasaquizla@gmail.com",
+  phone: "+593 600 987 654",
   experience: "Más de 30 años de experiencia",
   description:
-    "Soy una especialista reconocida en tratamientos dermatológicos avanzados. Nuestro enfoque combina tecnología de vanguardia, como peelings químicos y terapia láser, con un cuidado personalizado que asegura resultados efectivos y duraderos. Nuestro compromiso es transformar la piel de sus pacientes y mejorar su confianza.",
+    "Soy una especialista reconocida en tratamientos dermoestéticos. Nuestro enfoque combina tecnología de vanguardia, como peelings químicos y terapia láser, con un cuidado personalizado que asegura resultados efectivos y duraderos. Nuestro compromiso es transformar la piel de sus pacientes y mejorar su confianza.",
 };
 
   return (

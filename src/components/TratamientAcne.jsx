@@ -12,7 +12,7 @@ const RelaxationSpa = () => {
     {
       icon: <Droplet className="w-8 h-8 text-[#BC9C5E]" />,
       title: "Evaluación Personalizada",
-      description: "Análisis detallado de tu tipo de piel y condición del acné",
+      description: "Análisis detallado de tu tipo de piel y condición de tu piel",
     },
     {
       icon: <Target className="w-8 h-8 text-[#BC9C5E]" />,
@@ -28,8 +28,8 @@ const RelaxationSpa = () => {
     },
   ];
   return (
-    <div className="bg-gradient-to-b from-[#f5f5f5] to-white py-10 px-5">
-      <div className="text-center mb-8">
+    <div className="bg-gradient-to-b from-[#f5f5f5] to-white py-16 px-5 "  id="resultados">
+      <div className="text-center mb-8 my-16">
         <h2 className="text-4xl font-bold mb-4">
           Expertos en Tratamientos del{" "}
           <span className="text-[#BC9C5E]">Acné</span>

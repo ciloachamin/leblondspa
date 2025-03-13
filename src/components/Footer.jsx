@@ -1,33 +1,43 @@
-import React from "react";
 import {
   Facebook,
-  Twitter,
   Instagram,
-  Linkedin,
   MapPin,
   Phone,
   Mail,
   Clock,
 } from "lucide-react";
-import logo from "../assets/public/imgs/logo-leblondespa.png";
-const Footer = () => {
 
-   // Handler for opening Google Maps
-   const openGoogleMaps = () => {
-    const address = 'Gran Colombia 2-44, Cuenca, Ecuador';
-    const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
-    window.open(googleMapsUrl, '_blank');
+import logo from "../assets/public/imgs/logo-leblondespa.png";
+const TikTokIcon = () => (
+  <svg
+    className="w-5 h-5"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlSpace="preserve"
+  >
+    <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z" />
+  </svg>
+);
+const Footer = () => {
+  // Handler for opening Google Maps
+  const openGoogleMaps = () => {
+    const address = "Gran Colombia 2-44, Cuenca, Ecuador";
+    const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+      address
+    )}`;
+    window.open(googleMapsUrl, "_blank");
   };
 
   // Handler for opening WhatsApp
   const openWhatsApp = () => {
-    const phoneNumber = '593987220199'; // Ecuador country code + phone number without 0
-    window.open(`https://wa.me/${phoneNumber}`, '_blank');
+    const phoneNumber = "593987220199"; // Ecuador country code + phone number without 0
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
   };
 
   // Handler for sending email
   const sendEmail = () => {
-    window.location.href = 'mailto:lblonestetica@gmail.com';
+    window.location.href = "mailto:lblonestetica@gmail.com";
   };
 
   return (
@@ -55,18 +65,19 @@ const Footer = () => {
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
-                {/* <a href="#" className="text-gray-400 hover:text-gray-600">
-                  <Twitter className="w-5 h-5" />
-                </a> */}
                 <a
                   href="https://www.instagram.com/leblondespa?igsh=MXA2Y3VkdGZrMmlwaw%3D%3D"
                   className="text-gray-400 hover:text-gray-600"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
-                {/* <a href="#" className="text-gray-400 hover:text-gray-600">
-                  <Linkedin className="w-5 h-5" />
-                </a> */}
+                {/* TikTok */}
+                <a
+                  href="https://www.tiktok.com/@leblondspa"
+                  className="text-gray-400 hover:text-gray-600 transition-colors duration-200"
+                >
+                  <TikTokIcon />
+                </a>
               </div>
             </div>
           </div>
@@ -75,25 +86,29 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-lg font-semibold">Nuestros Servicios</h3>
             <ul className="space-y-3">
-              {/* <li className="flex items-center text-gray-600 hover:text-gray-900">
-                <span className="text-orange-400 mr-2">›</span>
-                Nail styling
-              </li> */}
-              {/* <li className="flex items-center text-gray-600 hover:text-gray-900">
-                <span className="text-orange-400 mr-2">›</span>
-                Health Shower
-              </li> */}
               <li className="flex items-center text-gray-600 hover:text-gray-900">
                 <span className="text-orange-400 mr-2">›</span>
                 Mascarillas de Spa
               </li>
               <li className="flex items-center text-gray-600 hover:text-gray-900">
                 <span className="text-orange-400 mr-2">›</span>
-                Orientación Especial
+                Limpieza facial
               </li>
               <li className="flex items-center text-gray-600 hover:text-gray-900">
                 <span className="text-orange-400 mr-2">›</span>
-                Relajación Mental
+                Rejuvenecimiento Facial
+              </li>
+              <li className="flex items-center text-gray-600 hover:text-gray-900">
+                <span className="text-orange-400 mr-2">›</span>
+                Biostimuladores de colageno
+              </li>
+              <li className="flex items-center text-gray-600 hover:text-gray-900">
+                <span className="text-orange-400 mr-2">›</span>
+                Remedial Massage Daishy
+              </li>
+              <li className="flex items-center text-gray-600 hover:text-gray-900">
+                <span className="text-orange-400 mr-2">›</span>
+                Extraccion de lunares y verrugas
               </li>
             </ul>
           </div>
