@@ -32,7 +32,7 @@ const HeroSection = () => {
               <div className="flex items-center border-b border-[#BC9C5E] pb-1">
                 <Sparkles className="w-4 h-4 text-[#BC9C5E] mr-2" />
                 <h3 className="tracking-widest text-sm font-medium text-[#4A5759]">
-                  LE BLOND SPA
+                  LE BLOND SPA X
                 </h3>
               </div>
             </div>
